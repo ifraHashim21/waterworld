@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WaterWorld</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="./autocomplete/jquery-ui.css">
+   <link rel="stylesheet" href="./autocomplete/jquery-ui.min.css">
+   <link rel="stylesheet" href="./autocomplete/jquery-ui.structure.css">
+
+    <style>
+      .carousel-item img {
+          width: 100%;
+          height: 400px;
+          object-fit: cover;
+      }
+      .card {
+          border: none;
+          border-radius: 15px;
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+      }
+      .card img {
+          border-radius: 15px;
+      }
+      .card-body {
+          padding: 20px;
+          background-color: #fff;
+          border-radius: 15px;
+      }
+      .card-title {
+          font-size: 1.25rem;
+          font-weight: bold;
+      }
+      .card-text {
+          font-size: 1rem;
+          color: #555;
+      }
+      .carousel-caption {
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+      .card-container {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          justify-content: center;
+          margin-top: 40px;
+      }
+      .card-container .col-md-4 {
+          flex: 1 0 30%;
+      }
+  </style>
+</head>
+<body>
+</head>
+<body style="background-color: #f9f9f9 ;">
+
+<!-- navbar-start -->
+<nav class="navbar navbar-expand-sm navbar-light bg-warning">
+    <div class="logo">
+      <img src="./image/remover1.png" alt="" width="150px" height="80px">
+    </div>
+
+    <div class="container">
+      <!-- <a class="container" href="#">Sanjalika WaterPark</a> -->
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" style="font-weight: bold;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html" style="font-weight: bold;">Gallery</a>
+          </li>
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a href="facilities.html" class="dropdown-item" style="font: size 18px; font-family: Copperplate Gothic Bold;">Our Facilities</a>
+              <a href="rides&slides.html" class="dropdown-item" style="font: size 18px; font-family: Copperplate Gothic Bold;">Rides and slides </a>
+              <a href="foods-zone.html" class="dropdown-item" style="font: size 18px; font-family: Copperplate Gothic Bold;">Food Zone</a>
+              <a href="park-information.html" class="dropdown-item" style="font: size 18px; font-family: Copperplate Gothic Bold;">Park Information </a>
+              <a href="location-map.html" class="dropdown-item" style="font: size 18px; font-family: Copperplate Gothic Bold;"> Location Map</a>
+            </div>
+          </div>
+          <li class="nav-item">
+            <a class="nav-link" href="about-us.html"style="font-weight: bold;">About </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact-us.html"style="font-weight: bold;">Contact </a>
+          </li>
+        </ul>
+        <i class="fa-solid fa-magnifying-glass"></i><form class="d-flex my-2 my-lg-0">
+          <input
+              class="form-control me-sm-2"
+              type="text"
+              placeholder="Search"
+          />
+          <button
+              class="btn btn-outline-success my-2 my-sm-0"
+              type="submit"
+          >
+              Search
+          </button>
+      </form>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar-end -->
+
+  <!-- Header Start -->
+ <div class="container-fluid bg-breadcrumb">
+    <div class="container text-center py-5" style="max-width: 900px;">
+        <h4 class="text-black display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Rides And Slides</h4> 
+        <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+            <li class="breadcrumb-item"><a href="index.html" style="color:green; font-weight: bold;font-size:18px;">Home</a></li>
+            <li class="breadcrumb-item active text-green" style="color:green; font-weight: bold;font-size:18px;">Pages</li>
+            <li class="breadcrumb-item active text-green" style="color:green; font-weight: bold;font-size:18px;">Rides and Sale </li> 
+        </ol>  <hr>  
+    </div>
+</div>
+<!-- Header End -->
+
+<!--rides ans slide -->
+ 
+ <div class="container-fluid attractions py-5" style="margin-top: 25px;">
+  <div class="container attractions-section py-5">
+      <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+          <!-- <h4 class="text-black">Attractions</h4> -->
+          <h1 class="display-5 text-black mb-4">"Explore WaterWorld Park Rides And Slides"</h1> <hr>
+          <p class="text-black mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
+          </p>
+      </div>
+<!--  End -->
+
+<!--Owl carousel-->
+
+<h2 style="text-align: center; color:black; font-family:Copperplate Gothic bold; font-size: 30px; font-weight: bold;">Find Rides And Slides</h2>
+<br>  
+<input type="search" placeholder="Search your Rides here" id="search">
+<button type="search" class="btn btn-info" id="searchBtn" onclick="searchsection()">Search</button>
+
+<div id="slidessection"> 
+    <div class="owl-carousel owl-theme">
+        <div class="item"><img src="./image/attraction-1.jpg" alt=""></div>
+        <div class="item"><img src="./image/attraction-2.jpg" alt=""></div>
+        <div class="item"><img src="./image/attraction-3.jpg" alt=""></div>
+        <div class="item"><img src="./image/attraction-4.jpg" alt=""></div>
+        </div>
+</div>
+<br>
+<br><br>
+ <!-- end-->
+
+<!-- Carousel for Rides and Slides -->
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="./image/attraction-2.jpg" class="d-block w-100" alt="First slide">
+          <div class="carousel-caption d-none d-md-block">
+              <h5>Roller Coaster Adventure</h5>
+              <p>Experience the thrill of a lifetime on the wildest roller coaster.</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="./image/attraction-1.jpg" class="d-block w-100" alt="Second slide">
+          <div class="carousel-caption d-none d-md-block">
+              <h5>Water Slide Frenzy</h5>
+              <p>Cool off and speed down the largest water slides ever built!</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="./image/spining.jpeg" class="d-block w-100" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+              <h5>Ferris Wheel Serenity</h5>
+              <p>Enjoy panoramic views from the top of the tallest Ferris wheel.</p>
+          </div>
+      </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- Card Section -->
+<div class="row g-4"> 
+    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+      <div class="blog-item">
+        <div class="blog-img">
+          <a href="#">
+         <br>  <br><br> <img src="./image/rollercoster.jpeg" class="img-fluid w-70 rounded-top" alt="Image">
+          </a>
+          <div class="blog-category py-2 px-4">Vacation</div>
+          <div class="blog-date"><i class="fas fa-clock me-2"></i>November 15, 2024</div>
+        </div>
+        <div class="blog-content p-4">
+          <a href="#" class="h4 d-inline-block mb-4">Why Children Dont Like Getting Out Of The Water</a>
+          <p class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam aspernatur nam quidem
+            porro sapiente, neque a quibusdam..
+          </p>
+          <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More <i
+              class="fas fa-arrow-right ms-2"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+      <div class="blog-item">
+        <div class="blog-img">
+          <a href="#">
+        <br>  <br><br>  <img src="./image/amusement.jpeg" class="img-fluid w-70 rounded-top" alt="Image">
+          </a>
+          <div class="blog-category py-2 px-4">Insight</div>
+          <div class="blog-date"><i class="fas fa-clock me-2"></i>November 15, 2024</div>
+        </div>
+        <div class="blog-content p-4">
+          <a href="#" class="h4 d-inline-block mb-4">5 Ways To Enjoy Waterpark This Spring Break</a>
+          <p class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam aspernatur nam quidem
+            porro sapiente, neque a quibusdam..
+          </p>
+          <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More <i
+              class="fas fa-arrow-right ms-2"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+      <div class="blog-item">
+        <div class="blog-img">
+          <a href="#">
+       <br>  <br><br>   <img src="./image/spining.jpeg" class="img-fluid w-70 rounded-top" alt="Image">
+          </a>
+          <div class="blog-category py-2 px-4">Insight</div>
+          <div class="blog-date"><i class="fas fa-clock me-2"></i>November 15, 2024</div>
+        </div>
+        <div class="blog-content p-4">
+            <a href="#" class="h4 d-inline-block mb-4"> spining</a>
+            <p class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam aspernatur nam quidem
+              porro sapiente, neque a quibusdam..
+            </p>
+            <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More <i
+                class="fas fa-arrow-right ms-2"></i></a>
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+  </div>
+  
+
+<!-- Start Footer- -->
+
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+        <a href="index.html" class="logo-white"
+          style="font-family:Copperplate Gothic bold; color:skyblue; font-size: 30px; ">@Sanjalika WaterWorld</a>
+      </div>
+      <div class="footer-col-2">
+        <center> <a href="index.html" class="logo-green">Mr.Souarib And Mr.Sikandar-Developer</a></center>
+        <hr>
+        <p>Explore a WaterWorld </p>
+        <p class="door">Email:  Souarib2406a@aptechgdn.net</p>
+        <p class="door">Email: Sikandar2406a@aptechgdn.net</p>
+        <hr>
+        <!-- <p>Phone: 92 (315)249-72964</p>
+          <p>Address: 123 Food St, Gulsane-Zahoor Karachi,</p> -->
+
+      </div>
+
+      <div class="footer-col-4">
+        <h3>Follow Us</h3>
+        <ul>
+          <i class="fa-brands fa-square-instagram"></i><br>
+          <i class="fa-brands fa-square-facebook"></i><br>
+          <i class="fa-brands fa-square-twitter"></i><br>
+          <i class="fa-brands fa-square-youtube"></i><br>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright" style="color:white;">   WaterWorld SanjalikaWaterPark@gmail.com</p>
+
+  </div>
+  <!-- --End Footer--> -
+
+      
+
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./autocomplete/jquery-ui.js"></script>
+
+  <script>
+      // Initialize Owl Carousel
+      $('.owl-carousel').owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,
+          responsive: {
+              0: { items: 1 },
+              600: { items: 3 },
+              1000: { items: 5 }
+          }
+      });
+
+      // Autocomplete for the search input
+      var suggestion = ['book', 'shoes'];
+      $('#search').autocomplete({
+          source: suggestion
+      });
+
+      $('#booksection').hide();
+    
+
+      // Search function
+      function searchsection() {
+          var input = $('#search').val().toLowerCase();
+
+          if (input === 'book') {
+              $('#booksection').show();
+              $('#shoessection').hide();
+          } else if (input === 'shoes') {
+              $('#booksection').hide();
+              $('#shoessection').show();
+          } else {
+              $('#booksection').hide();
+              $('#shoessection').hide();
+          }
+      }
+  </script>
+<script src="./js/bootstrap.bundle.min.js"></script>      
+</body>
+</html>

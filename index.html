@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="jquery-ui-1.14.1.custom/jquery-ui.css">
+  <link rel="stylesheet" href="jquery-ui-1.14.1.custom/jquery-ui.min.css">
+  <link rel="stylesheet" href="jquery-ui-1.14.1.custom/jquery-ui.structure.css">
+
+  <title>WaterWorld</title>
+</head>
+
+<body>
+  <!-- navbar-start -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-warning">
+    <div class="logo">
+      <img src="./image/remover1.png" alt="" width="150px" height="80px">
+    </div>
+    <div class="container">
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" style="font-weight: bold;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html" style="font-weight: bold;">Gallery</a>
+          </li>
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a href="facilities.html" class="dropdown-item" style="font: size 18px; font-family: Copperplate Gothic Bold;">Our Facilities</a>
+              <a href="rides&slides.html" class="dropdown-item" style="font: size 18px; font-family: Copperplate Gothic Bold;">Rides and slides </a>
+              <a href="foods-zone.html" class="dropdown-item" style="font: size 18px; font-family: Copperplate Gothic Bold;">Food Zone</a>
+              <a href="park-information.html" class="dropdown-item" style="font: size 18px; font-family: Copperplate Gothic Bold;">Park Information </a>
+              <a href="location-map.html" class="dropdown-item" style="font: size 18px; font-family: Copperplate Gothic Bold;"> Location Map</a>
+            </div>
+          </div>
+          <li class="nav-item">
+            <a class="nav-link" href="about-us.html"style="font-weight: bold;">About </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact-us.html"style="font-weight: bold;">Contact </a>
+          </li>
+        </ul>
+        <i class="fa-solid fa-magnifying-glass"></i><form class="d-flex my-2 my-lg-0">
+          <input
+              class="form-control me-sm-2"
+              type="text"
+              placeholder="Search"
+          />
+          <button
+              class="btn btn-outline-success my-2 my-sm-0"
+              type="submit"
+          >
+              Search
+          </button>
+      </form>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar-end -->
+
+  <!---carousel start -->
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./image/carousel-1.jpg" class="d-block w-100" alt="..">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="font-family: Copperplate Gothic Bold; font-weight: bold; color: WHITE;  font-size: 60px;"> WELCOME
+            TO SANJALIKA WATERPARK </h5>
+          <P style="font-family: Copperplate Gothic Bold; font-weight: bold; color:black; font-size: 30PX;"> THE BIGGEST
+            THEME & WATERWORLD</P>
+          <p>
+            Enjoy water park with joy and comfortable with your family .</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./image/carousel-2.jpg" class="d-block w-100" alt="..">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: WHITE; font-size: 30PX;"> FUN
+            AND ENJOY </h5>
+          <p>When discussing the best water slide points,.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./image/gallery-6.jpg" class="d-block w-100" alt="..">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: WHITE; font-size: 30PX;
+          ">EXPLORE THE WATERWORLD SANJALIKA WATERPARK</h5>
+          <p>When discussing the best water Rides points,</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> <br>
+  <!---carousel end-->
+
+  <!-- start banner -->
+  <div class="row">
+    <div class="col-2">
+
+      <u>
+        <h1 style="font-family: Copperplate Gothic Bold; color: black">Welcome to Sanjalika WaterPark </h1>
+      </u>
+      <u>
+        <h2 style="font-family: Copperplate Gothic Bold; color:green ;">Explore WaterWord here
+          <hr>
+        </h2>
+      </u>
+
+      <p>The fascinating, open air swimming pool is located near a tremendous ocean with its beautiful view. Swimming
+        pool is construct with the cool blue tiles that enhance the color of water in the pool. Day is not so hot due to
+        slight breeze that touching the people faces softly. Water in the pool is blue as the sky and clean as the
+        crystal. Cool blue Water of pool is soothing the eyes and refreshing mind and body. The place is busy and
+        crowded with visitors. People there wanted to dive in the deep of water.
+        Youngsters diving in the pool with eyes closed, arms outstretched feeling their heart before feeling the depth
+        of water. Splashing of water on others seems very interesting and a great fun for children. They seems to enjoy
+        splashing on their
+      </p>
+      <a href="./video/4929171-hd_1920_1080_25fps.mp4" class="btn">Explore Now &#10137;</a>
+    </div>
+    <div class="col-2">
+      <img src="./imge2/gallery4.jpg" alt="img" />
+    </div>
+  </div>
+  </div>
+
+  <!-- end banner -->
+
+
+  <u>
+    <center>
+      <h2 style="font-size: 55px; font-family: Copperplate Gothic Bold;"> Our Features </h2>
+    </center>
+  </u>
+
+  <!-- Feature Start -->
+  <div class="container-fluid feature py-5">
+    <div class="container py-5">
+      <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+        <!-- <h4 class="text-primary">Our Features</h4> -->
+        <h1 class="display-5 mb-4" style="font-family:Copperplate Gothic Bold; font-size: 40px; color: green;">Explore
+          WaterWorld <sup>Sanjalika WaterPark </sup> With Best Features</h1>
+        <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate
+          recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem
+          obcaecati, ipsam mollitia hic.
+        </p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="feature-item">
+            <img src="./image/feature-1.jpg" class="img-fluid rounded w-100" alt="Image">
+            <div class="feature-content p-4">
+              <div class="feature-content-inner">
+                <h4 class="text-black" style="font-weight: bold;">Best Pools</h4>
+                <p class="text-black">When considering the best pool points, you may be referring to various types of pools, such as in sports (like swimming or diving),</p>
+                <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More <i
+                    class="fa fa-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+          <div class="feature-item">
+            <img src="./image/feature-2.jpg" class="img-fluid rounded w-100" alt="Image">
+            <div class="feature-content p-4">
+              <div class="feature-content-inner">
+                <h4 class="text-black" style="font-weight: bold;">Waterslides</h4>
+                <p class="text-black">When discussing the best water slide points, people typically focus on several factors to evaluate the quality, excitement, and overall experience. 
+                </p>
+                <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More <i
+                    class="fa fa-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="feature-item">
+            <img src="./image/feature-3.jpg" class="img-fluid rounded w-100" alt="Image">
+            <div class="feature-content p-4">
+              <div class="feature-content-inner">
+                <h4 class="text-black" style="font-weight: bold;">River Rides</h4>
+                <p class="text-black">River rides, often a feature in water parks, resorts, or theme parks, offer a more leisurely, scenic, and relaxing experience compared to traditional water slides. 
+                <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More <i
+                    class="fa fa-arrow-right ms-1"></i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Feature End -->
+
+  <div class="container-fluid blog pb-5">
+    <div class="container pb-5">
+      <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+        <u>
+          <h4 class="text-black" style="font-size: 55px; font-family:Copperplate Gothic bold;">Our Blog</h4>
+          <hr>
+        </u>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="blog-item">
+            <div class="blog-img">
+              <a href="#">
+                <img src="./image/blog-2.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+              </a>
+              <div class="blog-category py-2 px-4">Vacation</div>
+              <div class="blog-date"><i class="fas fa-clock me-2"></i>November 15, 2024</div>
+            </div>
+            <div class="blog-content p-4">
+              <a href="#" class="h4 d-inline-block mb-4">Why Children Dont Like Getting Out Of The Water</a>
+              <p class="mb-4">Children often don't like getting out of the water for several reasons, many of which are related to their natural enjoyment of water and its sensory benefits. 
+              </p>
+              <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More <i
+                  class="fas fa-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+          <div class="blog-item">
+            <div class="blog-img">
+              <a href="#">
+                <img src="./image/blog-3.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+              </a>
+              <div class="blog-category py-2 px-4">Insight</div>
+              <div class="blog-date"><i class="fas fa-clock me-2"></i>November 15, 2024</div>
+            </div>
+            <div class="blog-content p-4">
+              <a href="#" class="h4 d-inline-block mb-4">5 Ways To Enjoy Waterland This Spring Break</a>
+              <p class="mb-4">
+                Spring break is a perfect time to enjoy Waterland or any water-themed destinations, whether you’re visiting a water park, beach, lake, or river.
+              </p>
+              <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More <i
+                  class="fas fa-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="blog-item">
+            <div class="blog-img">
+              <a href="#">
+                <img src="./image/blog-1.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+              </a>
+              <div class="blog-category py-2 px-4">Insight</div>
+              <div class="blog-date"><i class="fas fa-clock me-2"></i>November 15, 2024</div>
+            </div>
+            <div class="blog-content p-4">
+              <a href="#" class="h4 d-inline-block mb-4">3 Tips for Your Family Spring Break at Amusement Park</a>
+              <p class="mb-4">Spring break at the Sangalika water park is a fantastic way to enjoy quality time with the family while having fun and making lasting memories.
+              </p>
+              <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Read More <i
+                  class="fas fa-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Blog End -->
+
+  <center><video width="800px" height="500px" controls>
+      <source src="./video/4929171-hd_1920_1080_25fps.mp4" type="video/mp4">
+    </video></center> <br>
+  <!-- <center> <p style="font-size: 40px; color: black;  font-family:Copperplate Gothic bold; font-weight: bold; color: green;"> Explore The Sanjalika Waterpark</p></center><hr> -->
+
+
+  <!-- Booking Section -->
+  <section id="booking" class="booking">
+    <h2 style="font-size: 55px; font-family:Copperplate Gothic bold;">Booking Form </h2><hr>
+    <form action="#" method="post">
+      <label for="service" style="font-family: Copperplate Gothic Bold; color: darkgreen; font-size: 25px;" >Choose Your service:</label><br>
+      <select id="service" name="service">
+        <option value="service1"style="font-family: Copperplate Gothic Bold; color: darkblue; font-size: 20px;" >Private Room</option>
+        <option value="service2"style="font-family: Copperplate Gothic Bold; color: darkblue; font-size: 20px;" >Delicious Food</option>
+        <option value="service3"style="font-family: Copperplate Gothic Bold; color: darkblue; font-size: 20px;" >Saftey Lockers</option>
+        <option value="service3"style="font-family: Copperplate Gothic Bold; color: darkblue; font-size: 20px;" >River Rides</option>
+      </select>
+
+      <label for="date"style="font-family: Copperplate Gothic Bold; color: darkgreen; font-size: 25px;" >Select Date:</label><br>
+      <input type="date" id="date" name="date">
+
+      <label for="time"style="font-family: Copperplate Gothic Bold; color: darkgreen; font-size: 25px;" >Select Time:</label><br>
+      <input type="time" id="time" name="time">
+
+      <label for="name"style="font-family: Copperplate Gothic Bold; color: darkgreen; font-size: 25px;" >Your Name:</label><br>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email"style="font-family: Copperplate Gothic Bold; color: darkgreen; font-size: 25px;" >Your Email:</label><br>
+      <input type="email" id="email" name="email" required>
+
+      <button type="submit" class="cta-button"style="font-family: Copperplate Gothic Bold; color: black; font-size: 25px;" >Submit Booking</button><br>
+    </form>
+  </section>
+
+  <!-- Timing Section -->
+  <section class="timing">
+    <h2 style="font-size: 55px; font-family:Copperplate Gothic bold; color:darkblue;">Timing</h2><hr>
+    <ul>
+      <li style="font: size 40px; font-family: Copperplate Gothic Bold ; color: black;">Monday – Friday: <i class="fa-regular fa-clock"></i> 9:00 AM – 6:00 PM</li><br>
+      <li style="font: size 40px; font-family: Copperplate Gothic Bold ; color: black;">Saturday:<i class="fa-regular fa-clock"></i> 10:00 AM – 4:00 PM</li><br>
+      <li style="font: size 40px; font-family: Copperplate Gothic Bold ; color: black;">Sunday: Closed</li><br>
+    </ul>
+  </section>
+
+  <!-- Start Footer- -->
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <a href="index.html" class="logo-white"
+            style="font-family:Copperplate Gothic bold; color:skyblue; font-size: 30px; ">@Sanjalika WaterWorld</a>
+        </div>
+        <div class="footer-col-2">
+          <center> <a href="index.html" class="logo-green">Mr.Souarib And Mr.Sikandar-Developer</a></center>
+          <hr>
+          <p>Explore a WaterWorld </p>
+          <p class="door">Email:  Souarib2406a@aptechgdn.net</p>
+          <p class="door">Email: Sikandar2406a@aptechgdn.net</p>
+          <hr>
+          <!-- <p>Phone: 92 (315)249-72964</p>
+            <p>Address: 123 Food St, Gulsane-Zahoor Karachi,</p> -->
+
+        </div>
+
+        <div class="footer-col-4">
+          <h3>Follow Us</h3>
+          <ul>
+            <i class="fa-brands fa-square-instagram"></i><br><br>
+            <i class="fa-brands fa-square-facebook"></i><br><br>
+            <i class="fa-brands fa-square-twitter"></i><br><br>
+            <i class="fa-brands fa-square-youtube"></i><br><br>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="copyright" style="color:white;">   WaterWorld SanjalikaWaterPark@gmail.com </p>
+
+    </div>
+    <!-- --End Footer--> -
+
+
+    
+
+    <!--owl-carousel -start -->
+
+    <div class="owl-carousel owl-theme">
+      <div class="item"><img src="" alt=""></div>
+      <div class="item"><img src="" alt=""></div>
+      <div class="item"><img src="" alt=""></div>
+      <div class="item"><img src="" alt=""></div>
+      <div class="item"><img src="" alt=""></div>
+      <div class="item"><img src="" alt=""></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script>
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 3
+          },
+          1000: {
+            items: 5
+          }
+        }
+      })
+    </script>
+</body>
+
+</html>

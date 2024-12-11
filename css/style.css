@@ -1,0 +1,348 @@
+body {
+    /* font-family: Arial, sans-serif; */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+nav a 
+{
+    margin-inline: 10px;
+    color:black;
+    text-decoration:none ;
+    font-size: 20px;
+    font-family:arial;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+nav ul li  a:hover
+{
+    background-color:white;
+    font-style:arial;
+    border-radius: 25px;
+    color:white;
+    text-decoration: none;
+    transition: 2s;
+}
+.logo img {
+    border-radius: 20px;
+    border-top: 10px;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.container .container {
+    font-size: 35px;
+    font-family:Bauhaus 93;
+}
+.col-md-4 {
+    margin-left: 45px;
+}
+ /* Banner css*/
+ p{
+    color:#555;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-right: 25px;
+    font-family:Arial;
+
+ }
+.container
+ {
+ max-width: 1300px;
+ margin: auto;
+ padding-left: 25px;
+ padding-left: 25px;
+ }
+
+.row{
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+justify-content: space-around;
+margin-bottom: 60px;
+}
+.col-2 {
+flex-basis: 50%;
+min-width: 300px;
+}
+.col-2 img{
+border-radius: 25px;
+max-width: 100%;
+padding: 50px 50px;
+height: 600px;
+width: 850px;
+}
+.col-2 h1{
+    
+font-size: 50px;
+line-height: 60px;
+margin: 25px 0px;
+margin-left: 30px;
+font-family:Blackadder ITC; 
+}
+.col-2 h2{
+    font-size: 50px;
+    line-height: 20px;
+    margin: 25px 0px;
+    margin-left: 30px;
+    font-family:Arial; 
+    }
+.btn, .sortbtn {
+display: inline-block;
+background-color: green;
+color: whitesmoke;
+padding: 8px 30px;
+margin: 30px 0px;
+border-radius: 25px;
+transition: background-color 0.5s;
+margin-left: 30px;
+font-family:Calibri Light (Headings);
+font-size: 20px;
+font-weight: bold;
+}
+.btn:hover{
+background-color:skyblue;
+color:black
+}
+.sortbtn{
+border: none;
+cursor: pointer;
+}
+.header{
+background-color: #f2f2f2;
+}
+.header .row{
+margin-top: 70px;
+}
+/* End Banner css*/
+
+/* Footer css */
+
+.footer{
+    background: #000;
+color: #8a8a8a; font-size: 14px;
+padding: 60px 0 20px;
+}
+.footer p {
+color: #8a8a8a;
+}
+
+.footer h3{
+    margin-bottom: 20px;
+color: #fff;
+font-family:Calibri Light (Headings);
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1 a{
+color: white;
+font-size: 25px;
+font-family: arial;
+}
+.footer-col-2 a{
+    color: white;
+font-size: 25px;
+font-family: arial;
+
+}
+
+.footer-col-1{
+flex-basis: 30%;
+}
+
+.footer-col-2{
+
+flex: 1;
+text-align: center;
+}
+
+.footer-col-2 img {
+width: 180px;
+margin-bottom: 20px;
+color: #f2f2f2;
+}
+.footer-col-3, .footer-col-4{
+ flex-basis: 12%;
+ text-align: center;
+}
+.footer-col-4 ul li{
+font-size: 20px;
+font-family: arial;
+
+}
+.footer-col-4 h3{
+    font-size: 25px;
+    font-family: arial;
+}
+ul {
+list-style-type: none;
+}
+
+.footer hr{
+border: none;
+background: #b5b5b5;
+height: 1px;
+margin: 20px 0px;
+}
+
+.copyright{
+text-align: center;
+font-family:Calibri Light (Headings);
+}
+.footer-col-2 a hr{
+    height: 1px;
+margin: 20px 0px;
+}
+/* End Footer css*/
+.fa-square-youtube{
+    font-size: 50px;
+    color: red;
+}
+.fa-square-twitter{
+    font-size: 50px;
+    color: skyblue;
+}
+.fa-square-facebook
+{
+    font-size: 50px;
+    color:rgb(8, 127, 173);
+}
+.fa-square-instagram{
+    font-size: 50px;
+    color:purple;
+}
+/* Booking Section Styles */
+.booking {
+    background-color: #fff;
+    padding: 30px 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booking h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .booking form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .booking form label {
+    font-size: 16px;
+  }
+  
+  .booking form input,
+  .booking form select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .booking form button {
+    background-color:skyblue;
+    color:black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  .booking form button:hover {
+    background-color:grey;
+  }
+/* Timing Section Styles */
+.timing {
+    background-color: #f4f4f4;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .timing h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .timing ul {
+    font-size: 18px;
+  }  
+  .fa-clock{
+    color: darkblue;
+    margin-left: 18px;
+    font-size: 20PX;
+  }
+  .fa-magnifying-glass{
+    margin-right: 20px;
+    color: black;
+    font-size:20px;
+    
+  }
+  .header{
+    background-color: #f2f2f2;
+    }
+    .header .row{
+    margin-top: 70px;
+    }
+    .categories{
+        margin: 70px 0px;
+        }
+        .col-3{
+        flex-basis: 30%;
+        min-width: 250px;
+        margin-bottom: 30px;
+        }
+        .col-3 img{
+        width: 100%;
+
+        }
+        .col-3:hover{
+          transform: translateY(-20px);
+          
+          }
+        .small-container{
+        max-width: 1080px;
+        margin: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+        }
+        h2 hr{
+            border: none;
+            background: #b5b5b5;
+            height: 1px;
+            margin: 20px 0px;
+            font-family: arial;
+            font-weight: bold;
+            font-size: 25px;
+            color: #000 solid;
+        }
+        h2{
+            font-size: 40px;
+        }
+        .col-3 h4{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .rating .fa{
+            color:orange;
+            font-size: 20px;
+        }
+        .fas{
+          color:skyblue;
+          
+        }
+        .col-lg-4 :hover{
+          transform: translateY(-20px);
+
+        }
+        
